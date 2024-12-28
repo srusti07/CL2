@@ -1,0 +1,34 @@
+export ZONE=
+curl -LO raw.githubusercontent.com/Techcps/GSP-Short-Trick/master/Implement%20DevOps%20Workflows%20in%20Google%20Cloud%3A%20Challenge%20Lab/techcps330.sh
+sudo chmod +x techcps330.sh
+./techcps330.sh
+
+
+then go to search bar and type cloud build triggers and delete the 2 created triggers.and click on create trigger and create the following 2 triggers
+make sure you connect your own github repository
+
+trigger 1:
+
+Production Deployment Trigger:
+Property 	                                         Value
+Name 	                              sample-app-prod-deploy
+Branch Pattern 	                        ^master$
+Build Configuration File 	            cloudbuild.yaml
+
+after this trigger is created, click on create trigger again and create this trigger
+
+Development Deployment Trigger:
+Property 	                                                       Value
+Name 	                                        sample-app-dev-deploy
+Branch Pattern 	                                        ^dev$
+Build Configuration File 	                         cloudbuild-dev.yaml
+
+
+
+curl -LO raw.githubusercontent.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/main/Implement%20DevOps%20Workflows%20in%20Google%20Cloud%20Challenge%20Lab/gsp330-2.sh
+
+sudo chmod +x gsp330-2.sh
+
+./gsp330-2.sh
+
+shrib.com/#kyare
